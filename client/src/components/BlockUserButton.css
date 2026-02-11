@@ -1,0 +1,143 @@
+.block-user-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #dc3545;
+  background: white;
+  color: #dc3545;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.block-user-btn:hover {
+  background: #dc3545;
+  color: white;
+}
+
+.block-user-btn.blocked {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.block-user-btn.blocked:hover {
+  background: #6c757d;
+  color: white;
+}
+
+.block-user-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.block-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.block-modal {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.block-modal h3 {
+  color: #333;
+  margin: 0 0 0.5rem 0;
+}
+
+.block-modal > p {
+  color: #666;
+  margin: 0 0 1.5rem 0;
+}
+
+.block-modal .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.block-modal .form-group label {
+  display: block;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.block-modal .form-group select,
+.block-modal .form-group textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.block-modal .form-group textarea {
+  resize: vertical;
+}
+
+.block-modal-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.btn-cancel,
+.btn-confirm-block {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.btn-cancel {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background: #5a6268;
+}
+
+.btn-confirm-block {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-confirm-block:hover {
+  background: #c82333;
+}
+
+.btn-cancel:disabled,
+.btn-confirm-block:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .block-modal {
+    padding: 1.5rem;
+  }
+
+  .block-modal-actions {
+    flex-direction: column;
+  }
+
+  .btn-cancel,
+  .btn-confirm-block {
+    width: 100%;
+  }
+}

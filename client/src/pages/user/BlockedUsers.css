@@ -1,0 +1,129 @@
+.blocked-users-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.blocked-users-header {
+  margin-bottom: 2rem;
+}
+
+.blocked-users-header h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.blocked-users-header p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.no-blocked-users {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 3rem;
+  text-align: center;
+  color: #666;
+}
+
+.blocked-users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blocked-user-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.blocked-user-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blocked-user-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex: 1;
+}
+
+.blocked-user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.blocked-user-details {
+  flex: 1;
+}
+
+.blocked-user-details h3 {
+  color: #333;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.block-reason {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+
+.block-notes {
+  color: #777;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin: 0.25rem 0;
+}
+
+.block-date {
+  color: #999;
+  font-size: 0.85rem;
+  margin: 0.25rem 0;
+}
+
+.btn-unblock {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.btn-unblock:hover {
+  background: #5a6268;
+}
+
+@media (max-width: 768px) {
+  .blocked-user-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .blocked-user-info {
+    width: 100%;
+  }
+
+  .btn-unblock {
+    width: 100%;
+  }
+}

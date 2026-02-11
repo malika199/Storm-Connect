@@ -1,0 +1,50 @@
+.guardian-profile-cards,
+.guardian-ward-card {
+  margin-bottom: 20px;
+}
+
+.guardian-profile-cards h2,
+.guardian-ward-card h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+  color: #333;
+}
+
+.guardian-info-list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 24px;
+  margin: 0;
+}
+
+.guardian-info-list dt {
+  margin: 0;
+  font-weight: 600;
+  color: #555;
+}
+
+.guardian-info-list dd {
+  margin: 0;
+  color: #333;
+}
+
+.ward-info {
+  margin: 0;
+}
+
+.ward-name {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.ward-detail {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@media (min-width: 768px) {
+  .container .guardian-profile-cards + .guardian-ward-card {
+    margin-top: 0;
+  }
+}
